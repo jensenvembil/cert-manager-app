@@ -57,9 +57,12 @@ export default class AddCert extends Component {
         }
         console.log(certData);
         axios.post(constants.APIHOSTURL+'create', certData)
-        .then(res => console.log(res.data));
+        .then(res => console.log(res.data))
+        .then(()=>{
+            window.location = '/';
+        });
 
-        window.location = '/';
+        
     }
 
 

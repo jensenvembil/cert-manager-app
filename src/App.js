@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { useSyncExternalStore, Component } from 'react';
+import {  Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 
