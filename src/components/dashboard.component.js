@@ -20,12 +20,8 @@ const Dashboard = () => {
 
     return (
         <div>
-{
-   volunteers.forEach(element=> {
-    <div>{element.youthName}</div>
-   })
-}
-            {/* <table className="table">
+
+            <table className="table">
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">ID</th>
@@ -39,7 +35,7 @@ const Dashboard = () => {
                 <tbody>                    
                     {
 
-                        volunteers.map((data) => {
+                        volunteers.map((data) => (
                             <tr>
                                 <td>{data._id}</td>
                                 <td>{data.youthName}</td>
@@ -48,10 +44,10 @@ const Dashboard = () => {
                                 <td><button type="button" class="btn btn-warning">Edit</button></td>
                                 <td><button type="button" class="btn btn-danger">Delete</button></td>
                             </tr>
-                        })
+                    ))
                     }
                 </tbody>
-            </table> */}
+            </table> 
         </div>
     );
 }
